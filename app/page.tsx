@@ -10,7 +10,7 @@ export default function Home() {
     router.push(`/${location.toLowerCase()}`);
   };
   return (
-    <div className="flex items-center justify-center min-h-screen">
+    <div className="flex items-center justify-center h-screen">
       <div>
         <h1>Enter a city for its weather !</h1>
         <TextField

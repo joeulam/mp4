@@ -44,7 +44,7 @@ export default function WeatherLocation() {
   return (
     <>
       {!fetchRes ? (
-        <div className="flex items-center justify-center min-h-screen">
+        <div className="flex items-center justify-center h-screen">
           {isDueToWrongCity ? (
             <Box>
               <Alert severity="error">
@@ -64,7 +64,7 @@ export default function WeatherLocation() {
           )}
         </div>
       ) : isWeatherDataLoading ? (
-        <div className="flex items-center justify-center min-h-screen">
+        <div className="flex items-center justify-center h-screen">
           <h1 className="text-5xl font-extrabold">LOADING</h1>
         </div>
       ) : (
