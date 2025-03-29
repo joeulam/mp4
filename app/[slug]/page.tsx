@@ -96,7 +96,7 @@ export default function WeatherLocation() {
                   </span>
                 </h3>
                 <p>
-                  Today's outlook:
+                  Today&apos;s outlook:
                   <span className="font-bold">{weatherData?.description}</span>
                 </p>
               </Box>
