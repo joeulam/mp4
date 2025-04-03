@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="flex items-center justify-center h-screen">
       <div>
-        <h1>Enter a city for its weather !</h1>
+        <h1 className='font-bold text-2xl mb-5'>Enter a city for its weather !</h1>
         <TextField
           id="input"
           label="City location"

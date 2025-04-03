@@ -59,7 +59,7 @@ export default function WeatherLocation() {
             </Box>
           ) : (
             <h1 className="text-5xl font-extrabold">
-              Failed to fetch weather data. Try again later.
+              Something went wrong try again later.
             </h1>
           )}
         </div>
@@ -84,20 +84,26 @@ export default function WeatherLocation() {
               </h1>
               <Box sx={{ padding: 5 }}>
                 <h3>
-                  Current temperature:{" "}
+                  Current temperature:
                   <span className="font-bold">
-                    {weatherData?.currentConditions.temp + "F"}
+                    {` ${weatherData?.currentConditions.temp + "°F"}`}
                   </span>
                 </h3>
                 <h3>
-                  Current condition:{" "}
+                  Feels like:
                   <span className="font-bold">
-                    {weatherData?.currentConditions.conditions}
+                    {` ${weatherData?.currentConditions.feelslike + "°F"}`}
+                  </span>
+                </h3>
+                <h3>
+                  Current condition:
+                  <span className="font-bold">
+                    {` ${weatherData?.currentConditions.conditions}`}
                   </span>
                 </h3>
                 <p>
-                  Today&apos;s outlook:
-                  <span className="font-bold">{weatherData?.description}</span>
+                  This week&apos;s outlook:
+                  <span className="font-bold">{` ${weatherData?.description}`}</span>
                 </p>
               </Box>
             </Card>
